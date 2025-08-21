@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tu Nombre — Portafolio</title>
+  <meta name="description" content="Portafolio de Tu Nombre, estudiante/desarrollador(a) de software. Proyectos, habilidades y contacto." />
+  <!-- SEO/Compartir -->
+  <meta property="og:title" content="Portafolio — Emily Duque" />
+  <meta property="og:description" content="Proyectos, habilidades y contacto." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://Emily-Duque.github.io" />
+  <meta name="theme-color" content="#0ea5e9" />
+
+  <style>
+    :root{
+      --bg: #0b1220;        
+      --panel: #0f172a;
+      --text: #e4e7ee;
+      --muted: #9aa3b2;
+      --primary: #38bdf8;
+      --accent: #22d3ee;
+      --card: #111827;
+      --border: #1f2937;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;background:linear-gradient(180deg,var(--bg),#0c1629 70%);color:var(--text)}
+    a{color:var(--primary);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:1050px;margin:0 auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 0}
+    nav{display:flex;gap:16px;flex-wrap:wrap}
+    nav a{padding:8px 12px;border:1px solid var(--border);border-radius:999px;background:rgba(255,255,255,0.02)}
+    nav a:hover{background:rgba(255,255,255,0.06)}
+
+    .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:24px;align-items:center;margin-top:8px}
+    .hero-card{background:linear-gradient(180deg,var(--panel),#0b1324);border:1px solid var(--border);border-radius:24px;padding:28px;box-shadow:0 10px 30px rgba(0,0,0,.2)}
+    .title{font-size:36px;line-height:1.15;margin:0 0 8px}
+    .subtitle{color:var(--muted);margin:0 0 14px}
+    .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+    .tag{font-size:14px;border:1px solid var(--border);padding:6px 10px;border-radius:999px;background:#0c1a33}
+    .cta{display:flex;gap:12px;margin-top:18px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:12px;border:1px solid var(--border);background:#0e1b36;font-weight:600}
+    .btn.primary{background:linear-gradient(90deg,var(--primary),var(--accent));color:#0b1020;border:none}
+
+    .avatar{aspect-ratio:1/1;width:160px;border-radius:20px;border:1px solid var(--border);background:#0a1326;display:block;margin-left:auto}
+
+    section{margin-top:36px}
+    h2{font-size:22px;margin:0 0 16px}
+
+    .skills,.projects{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .chip{border:1px solid var(--border);padding:10px 12px;border-radius:12px;background:rgba(255,255,255,0.02)}
+
+    .card{background:var(--card);border:1px solid var(--border);border-radius:18px;padding:16px;display:flex;flex-direction:column;gap:10px}
+    .card h3{margin:0}
+    .card p{margin:0;color:var(--muted)}
+    .card .links{margin-top:auto;display:flex;gap:10px}
+
+    footer{margin:36px 0 12px;color:var(--muted);text-align:center}
+
+    @media (max-width: 900px){
+      .hero{grid-template-columns:1fr}
+      .avatar{margin:0 auto}
+      .skills,.projects{grid-template-columns:1fr 1fr}
+    }
+    @media (max-width: 580px){
+      .skills,.projects{grid-template-columns:1fr}
+      .title{font-size:28px}
+    }
+  </style>
+</head>
+<body>
+  <a href="#contenido" class="sr-only">Saltar al contenido</a>
+  <div class="container">
+    <header>
+      <strong>Emily Duque</strong>
+      <nav aria-label="Navegación principal">
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </header>
+
+    <main id="contenido">
+      <div class="hero">
+        <div class="hero-card">
+          <h1 class="title">👋 Hola, soy <span style="color:var(--primary)">Tu Nombre</span></h1>
+          <p class="subtitle">Estudiante de desarrollo de software. 
+          <div class="tags">
+            <span class="tag">HTML basico</span>
+            <span class="tag">CSS basico</span>
+            <span class="tag">C++ basico</span>
+          </div>
+          <div class="cta">
+            <!-- Reemplaza los enlaces -->
+            <a class="btn primary" href="emilidanieladuque@gmail.com">📨 Contáctame</a>
+            <a class="btn" href="https://github.com/EMILY-DUQUE" target="_blank" rel="noopener">⭐ GitHub</a>
+          </div>
+        </div>
+        <!-- Coloca tu foto en /img/avatar.jpg dentro del repo y actualiza el src -->
+        <img class="avatar" src="https://avatars.githubusercontent.com/u/9919?s=200&v=4" alt="Foto de perfil" />
+      </div>
+
+      <section id="sobre-mi">
+        <h2>Sobre mí</h2>
+        <p>
+          Soy estudiante de <strong>Desarrollo de Software</strong>. Me gusta construir interfaces limpias y resolver
+          problemas con código. Aquí comparto mis proyectos, ejercicios de clase y lo que voy aprendiendo.
+        </p>
+      </section>
+
+      <section id="habilidades">
+        <h2>Habilidades</h2>
+        <div class="skills">
+          <div class="chip">HTML5 / Accesibilidad</div>
+          <div class="chip">CSS / Flex / Grid</div>
+          <div class="chip">JavaScript (DOM, fetch)</div>
+          <div class="chip">C / C++ (estructuras de datos)</div>
+          <div class="chip">Git / GitHub</div>
+          <div class="chip">SQL básico</div>
+        </div>
+      </section>
+
+      <section id="proyectos">
+        <h2>Proyectos</h2>
+       
+      <section id="contacto">
+        <h2>Contacto</h2>
+        <p>¿Colaboremos? Escríbeme a <a href="mailto:tucorreo@ejemplo.com">tucorreo@ejemplo.com</a> o por <a href="https://www.linkedin.com/in/tuusuario" target="_blank" rel="noopener">LinkedIn</a>.</p>
+      </section>
+    </main>
+
+    <footer>
+      © <span id="year"></span> EMILY DUQUE
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
